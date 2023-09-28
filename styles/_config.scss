@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  background-color: $light-gray;
+
+  font-family: "Outfit", sans-serif;
+}
+
+@mixin media-desktop {
+  @media screen and (min-with: 1440px) {
+    @content;
+  }
+}
